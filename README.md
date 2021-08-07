@@ -1,2 +1,2 @@
 # GodotHorrorQuest
-This project was my "Hello world" by using godot engine.
+This project was my "Hello world" using godot engine.
