@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://objects/Interactive/Messages/MessageItem.gd" type="Script" id=1]
+[ext_resource path="res://objects/Fonts/MessageBoxFonts.tres" type="DynamicFont" id=2]
+[ext_resource path="res://objects/Interactive/Messages/TransparentBackground.tres" type="StyleBox" id=3]
+
+[node name="Message" type="MarginContainer"]
+anchor_right = 1.0
+margin_bottom = 63.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Panel" parent="."]
+margin_right = 1920.0
+margin_bottom = 63.0
+custom_styles/panel = ExtResource( 3 )
+
+[node name="Text" type="Label" parent="."]
+margin_right = 1920.0
+margin_bottom = 63.0
+custom_fonts/font = ExtResource( 2 )
+autowrap = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

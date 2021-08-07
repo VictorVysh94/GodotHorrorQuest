@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/uv_flashlight.wav-9be7c32a950ad31ec87d2fab08aa779b.sample"
+
+[deps]
+
+source_file="res://sounds/items/uv_flashlight.wav"
+dest_files=[ "res://.import/uv_flashlight.wav-9be7c32a950ad31ec87d2fab08aa779b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://objects/Interactive/Messages/MessageBox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/Interactive/Messages/GlobalMessageBox.gd" type="Script" id=2]
+
+[node name="MessageBox" type="Node2D"]
+z_index = 1
+script = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MessageBox" parent="Control" instance=ExtResource( 1 )]
+rect_scale = Vector2( 1, 1 )

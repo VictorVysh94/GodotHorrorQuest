@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/keypad_wrong.wav-5415d67076248482b8ca2a4aba44886e.sample"
+
+[deps]
+
+source_file="res://sounds/keypad/keypad_wrong.wav"
+dest_files=[ "res://.import/keypad_wrong.wav-5415d67076248482b8ca2a4aba44886e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

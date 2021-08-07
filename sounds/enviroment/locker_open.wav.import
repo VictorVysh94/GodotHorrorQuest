@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/locker_open.wav-41037cbdd222ee26f3e0379bd533e97c.sample"
+
+[deps]
+
+source_file="res://sounds/enviroment/locker_open.wav"
+dest_files=[ "res://.import/locker_open.wav-41037cbdd222ee26f3e0379bd533e97c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

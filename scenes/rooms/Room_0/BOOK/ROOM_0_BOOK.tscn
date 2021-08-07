@@ -1,0 +1,253 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes/rooms/Room_0/BOOK/ROOM_0_BOOK.gd" type="Script" id=1]
+[ext_resource path="res://scenes/rooms/Room_0/BOOK/Keypad.gd" type="Script" id=2]
+[ext_resource path="res://sprites/room_0/background/main.png" type="Texture" id=3]
+[ext_resource path="res://sprites/room_0/objects/key_paper.png" type="Texture" id=4]
+[ext_resource path="res://sprites/room_0/objects/keypad.png" type="Texture" id=5]
+[ext_resource path="res://objects/Fonts/MessageBoxFonts.tres" type="DynamicFont" id=6]
+[ext_resource path="res://scenes/rooms/Room_0/MAIN_ROOM_SCRIPTS/StickedPaper.gd" type="Script" id=7]
+[ext_resource path="res://sprites/room_0/objects/paper_sticked.png" type="Texture" id=8]
+
+[node name="ROOM_0_BOOK" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.51978
+margin_right = 2.51978
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+RoomName = "ROOM_0"
+RoomPart = "BOOK"
+
+[node name="background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StickedPaper" type="TextureRect" parent="."]
+anchor_left = 0.518
+anchor_top = 0.222
+anchor_right = 0.625
+anchor_bottom = 0.412
+margin_left = 0.440002
+margin_top = 0.239975
+margin_right = 819.0
+margin_bottom = 819.04
+rect_scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+ItemName = "PaperKey0"
+
+[node name="keypad" type="Sprite" parent="."]
+visible = false
+position = Vector2( 960, 540 )
+texture = ExtResource( 5 )
+
+[node name="Effects" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 1122, 276 )
+
+[node name="1" type="TextureButton" parent="." groups=[
+"KeypadButtons",
+]]
+anchor_left = 0.389
+anchor_top = 0.341
+anchor_right = 0.389
+anchor_bottom = 0.341
+margin_left = 0.119934
+margin_top = -0.280029
+margin_right = 122.12
+margin_bottom = 88.72
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Key = "1"
+
+[node name="2" type="TextureButton" parent="." groups=[
+"KeypadButtons",
+]]
+anchor_left = 0.471
+anchor_top = 0.341
+anchor_right = 0.471
+anchor_bottom = 0.341
+margin_left = 0.947083
+margin_top = -0.280029
+margin_right = 122.947
+margin_bottom = 88.72
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Key = "2"
+
+[node name="3" type="TextureButton" parent="." groups=[
+"KeypadButtons",
+]]
+anchor_left = 0.554
+anchor_top = 0.341
+anchor_right = 0.554
+anchor_bottom = 0.341
+margin_left = 0.832642
+margin_top = -0.280029
+margin_right = 122.833
+margin_bottom = 88.72
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Key = "3"
+
+[node name="4" type="TextureButton" parent="." groups=[
+"KeypadButtons",
+]]
+anchor_left = 0.388
+anchor_top = 0.482
+anchor_right = 0.388
+anchor_bottom = 0.482
+margin_left = 0.705139
+margin_top = -0.388245
+margin_right = 122.705
+margin_bottom = 88.6118
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Key = "4"
+
+[node name="5" type="TextureButton" parent="." groups=[
+"KeypadButtons",
+]]
+anchor_left = 0.471
+anchor_top = 0.482
+anchor_right = 0.471
+anchor_bottom = 0.482
+margin_left = -0.387756
+margin_top = -0.388245
+margin_right = 121.612
+margin_bottom = 88.6118
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Key = "5"
+
+[node name="6" type="TextureButton" parent="." groups=[
+"KeypadButtons",
+]]
+anchor_left = 0.554
+anchor_top = 0.482
+anchor_right = 0.554
+anchor_bottom = 0.482
+margin_left = -0.502197
+margin_top = -0.388245
+margin_right = 121.498
+margin_bottom = 88.6118
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Key = "6"
+
+[node name="7" type="TextureButton" parent="." groups=[
+"KeypadButtons",
+]]
+anchor_left = 0.388
+anchor_top = 0.621
+anchor_right = 0.388
+anchor_bottom = 0.621
+margin_left = 0.705139
+margin_top = 0.328613
+margin_right = 122.705
+margin_bottom = 89.3286
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Key = "7"
+
+[node name="8" type="TextureButton" parent="." groups=[
+"KeypadButtons",
+]]
+anchor_left = 0.471
+anchor_top = 0.621
+anchor_right = 0.471
+anchor_bottom = 0.621
+margin_left = -0.387756
+margin_top = 0.328613
+margin_right = 121.612
+margin_bottom = 89.3286
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Key = "8"
+
+[node name="9" type="TextureButton" parent="." groups=[
+"KeypadButtons",
+]]
+anchor_left = 0.554
+anchor_top = 0.621
+anchor_right = 0.554
+anchor_bottom = 0.621
+margin_left = -0.502197
+margin_top = 0.328613
+margin_right = 121.498
+margin_bottom = 89.3286
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Key = "9"
+
+[node name="PasswordSprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 302.502, 549.339 )
+scale = Vector2( 0.758443, 0.758443 )
+texture = ExtResource( 4 )
+
+[node name="GoBack" type="Button" parent="."]
+visible = false
+anchor_left = 0.754
+anchor_top = 0.51
+anchor_right = 0.754
+anchor_bottom = 0.51
+margin_left = -0.860596
+margin_top = -0.22467
+margin_right = 311.139
+margin_bottom = 68.7753
+custom_fonts/font = ExtResource( 6 )
+text = "Закрыть книгу"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BookAnimation" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+
+[connection signal="pressed" from="1" to="1" method="_on_pressed"]
+[connection signal="pressed_key" from="1" to="." method="_on_pressed_key"]
+[connection signal="pressed" from="2" to="2" method="_on_pressed"]
+[connection signal="pressed_key" from="2" to="." method="_on_pressed_key"]
+[connection signal="pressed" from="3" to="3" method="_on_pressed"]
+[connection signal="pressed_key" from="3" to="." method="_on_pressed_key"]
+[connection signal="pressed" from="4" to="4" method="_on_pressed"]
+[connection signal="pressed_key" from="4" to="." method="_on_pressed_key"]
+[connection signal="pressed" from="5" to="5" method="_on_pressed"]
+[connection signal="pressed_key" from="5" to="." method="_on_pressed_key"]
+[connection signal="pressed" from="6" to="6" method="_on_pressed"]
+[connection signal="pressed_key" from="6" to="." method="_on_pressed_key"]
+[connection signal="pressed" from="7" to="7" method="_on_pressed"]
+[connection signal="pressed_key" from="7" to="." method="_on_pressed_key"]
+[connection signal="pressed" from="8" to="8" method="_on_pressed"]
+[connection signal="pressed_key" from="8" to="." method="_on_pressed_key"]
+[connection signal="pressed" from="9" to="9" method="_on_pressed"]
+[connection signal="pressed_key" from="9" to="." method="_on_pressed_key"]
+[connection signal="pressed" from="GoBack" to="." method="_on_GoBack_pressed"]

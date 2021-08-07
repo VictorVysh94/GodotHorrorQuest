@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://sprites/room_0/background/drawer.png" type="Texture" id=1]
+[ext_resource path="res://scenes/rooms/Room_0/DRAWER/Room_0_drawer.gd" type="Script" id=2]
+[ext_resource path="res://objects/Interactive/MoveButton/MoveTo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://objects/Interactive/ItemButton/Item.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sprites/room_0/objects/pencil.png" type="Texture" id=5]
+
+[node name="Room_0_drawer" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+RoomName = "ROOM_0"
+RoomPart = "DRAWER"
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MoveTo2" parent="." instance=ExtResource( 3 )]
+margin_left = 679.0
+margin_top = 1041.41
+margin_right = 2135.0
+margin_bottom = 1325.41
+rect_rotation = -34.1004
+location_name = "ROOM_0"
+location_part = "MAIN"
+sound = "res://sounds/enviroment/wood_drawer.wav"
+
+[node name="Item" parent="." instance=ExtResource( 4 )]
+margin_left = 252.597
+margin_top = 507.138
+margin_right = 1276.6
+margin_bottom = 1531.14
+rect_rotation = -14.8361
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 5 )
+stretch_mode = 2
+ItemName = "Pencil"

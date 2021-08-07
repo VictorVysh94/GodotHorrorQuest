@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pencil_short.wav-0eebb0f1f1460aec722028ebb320c36b.sample"
+
+[deps]
+
+source_file="res://sounds/items/pencil_short.wav"
+dest_files=[ "res://.import/pencil_short.wav-0eebb0f1f1460aec722028ebb320c36b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

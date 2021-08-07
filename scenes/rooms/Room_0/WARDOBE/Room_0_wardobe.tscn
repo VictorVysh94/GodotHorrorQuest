@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/rooms/Room_0/WARDOBE/Room_0_wardobe.gd" type="Script" id=2]
+[ext_resource path="res://objects/Interactive/MoveButton/MoveTo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sprites/room_0/objects/uv_flashlight.png" type="Texture" id=4]
+[ext_resource path="res://objects/Interactive/ItemButton/Item.tscn" type="PackedScene" id=5]
+
+[node name="Room_0_wardobe" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+RoomName = "ROOM_0"
+RoomPart = "WARDOBE"
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MoveTo" parent="." instance=ExtResource( 3 )]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 0.0
+margin_bottom = 0.0
+sound = "res://sounds/enviroment/locker_close.wav"
+returning = true
+
+[node name="Control" type="Control" parent="MoveTo"]
+margin_left = 243.0
+margin_top = 247.0
+margin_right = 710.0
+margin_bottom = 981.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Item" parent="MoveTo/Control" instance=ExtResource( 5 )]
+margin_left = 169.528
+margin_top = 57.8243
+margin_right = 1193.53
+margin_bottom = 1081.82
+rect_rotation = 49.0559
+rect_scale = Vector2( 0.1, 0.1 )
+texture_normal = ExtResource( 4 )
+ItemName = "UVFlashlight"

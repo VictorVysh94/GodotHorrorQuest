@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/corridors/corridor_0/corridor_0.gd" type="Script" id=1]
+[ext_resource path="res://sprites/corridor_0/main_background.png" type="Texture" id=2]
+[ext_resource path="res://objects/Fonts/MessageBoxFonts.tres" type="DynamicFont" id=3]
+
+[node name="Corridor_0" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 1551.0
+margin_top = 477.536
+margin_right = 1674.0
+margin_bottom = 557.536
+custom_fonts/font = ExtResource( 3 )
+text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
